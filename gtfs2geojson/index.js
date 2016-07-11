@@ -14,6 +14,9 @@ var gtfs2geojson = {
       memo[row.shape_id] = (memo[row.shape_id] || []).concat(row);
       return memo;
     }, {});
+
+    console.log(shapes)
+
     return {
       type: 'FeatureCollection',
       features: Object.keys(shapes).map(function(id) {

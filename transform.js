@@ -11,22 +11,23 @@
 sources.forEach(function(source) {
 
   console.log('Reading ' + source.name + '/stops.txt' )
-  //open shapes.txt, specify utf-8 encoding so we get a string back, not a buffer
-  var text = fs.readFileSync( './temp/' + source.name + '/stops.txt','utf8' );
-
 
   if (!fs.existsSync('geojson/' + source.name)){
       fs.mkdirSync('geojson/' + source.name);
   }
 
+  //open shapes.txt, specify utf-8 encoding so we get a string back, not a buffer
+  var shapes = fs.readFileSync( './temp/' + source.name + '/shapes.txt','utf8' );
   //transform shapes.txt
-  var geoJson = gtfs2geojson.lines( text );
+  var geoJson = gtfs2geojson.lines( shapes );
   var output = fs.createWriteStream('geojson/' + source.name + '/lines.geojson')
   output.write(JSON.stringify(geoJson));
 
 
   //transform stops.txt
-  var geoJson = gtfs2geojson.stops( text );
+  //open shapes.txt, specify utf-8 encoding so we get a string back, not a buffer
+  var stops = fs.readFileSync( './temp/' + source.name + '/stops.txt','utf8' );
+  var geoJson = gtfs2geojson.stops( stops );
   var output = fs.createWriteStream('geojson/' + source.name + '/stops.geojson')
   output.write(JSON.stringify(geoJson));
   
