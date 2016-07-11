@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      {
+        "name": "gtfs2geojson",
+        "raw": "gtfs2geojson",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/chriswhong/Sites/nyc-gtfs2geojson"
+    ]
+  ],
+  "_from": "gtfs2geojson@latest",
+  "_id": "gtfs2geojson@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gtfs2geojson",
+  "_nodeVersion": "5.11.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/gtfs2geojson-1.0.1.tgz_1465324237325_0.4158400744199753"
+  },
+  "_npmUser": {
+    "email": "tom@macwright.org",
+    "name": "tmcw"
+  },
+  "_npmVersion": "3.9.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gtfs2geojson",
+    "raw": "gtfs2geojson",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gtfs2geojson/-/gtfs2geojson-1.0.1.tgz",
+  "_shasum": "659fdab2c422ece5bf41f6c389438996ac6089a0",
+  "_shrinkwrap": null,
+  "_spec": "gtfs2geojson",
+  "_where": "/Users/chriswhong/Sites/nyc-gtfs2geojson",
+  "author": {
+    "name": "Tom MacWright"
+  },
+  "dependencies": {
+    "dsv": "0.0.5"
+  },
+  "description": "convert gtfs data into geojson files",
+  "devDependencies": {
+    "documentation-readme": "^2.0.0",
+    "tap": "^2.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dist": {
+    "shasum": "659fdab2c422ece5bf41f6c389438996ac6089a0",
+    "tarball": "https://registry.npmjs.org/gtfs2geojson/-/gtfs2geojson-1.0.1.tgz"
+  },
+  "gitHead": "d2ebcadd407c69c4a103f664b75655d4656f087e",
+  "keywords": [
+    "gtfs",
+    "data",
+    "convert"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "ulsh@mapbox.com",
+      "name": "alulsh"
+    },
+    {
+      "email": "tom@macwright.org",
+      "name": "tmcw"
+    }
+  ],
+  "name": "gtfs2geojson",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "docs": "documentation-readme README.md --section=API",
+    "test": "tap test/*.test.js"
+  },
+  "version": "1.0.1"
+}
