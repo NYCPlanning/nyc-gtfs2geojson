@@ -8,7 +8,7 @@ Script to extract GeoJSON points and lines from NYC GTFS Data.  Extracts lines f
 - Transform each into GeoJson `node transform.js`
 - Geojson is saved in `./geojson/{source.name}/{stops||lines}.geojson
 
-##gtfs2geojson
+## gtfs2geojson
 This script uses a modified version of `[gtfs2geojson(https://github.com/tmcw/gtfs2geojson)`, a node package by Tom MacWright.  We have added parsing for `stops.txt` and will do a Pull Request back to the package soon.
 
 ## How we are using it
